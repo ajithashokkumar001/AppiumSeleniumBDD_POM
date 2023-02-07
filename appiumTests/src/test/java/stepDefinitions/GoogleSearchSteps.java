@@ -51,6 +51,7 @@ public void user_enters_a_text_in_search_box() {
 public void hits_enter() {
 	
 	driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+	System.out.println("Success");
 
    
 }
