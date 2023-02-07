@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.AppiumCalcPage;
+import pages.LoginPage;
 
 public class LoginSteps {
 
@@ -17,11 +19,16 @@ public class LoginSteps {
 	@Given("User is on login page")
 	public void user_is_on_login_page() {
 
+		
+		LoginPage LogPag = new LoginPage(driver);
+
 		System.out.println("Reached Given");
 		System.setProperty("webdriver.chrome.driver",
 				new File(System.getProperty("user.dir"), "chromedriver.exe").getAbsolutePath());
 		driver = new ChromeDriver();
-		driver.get("https://example.testproject.io/web/");
+		
+		LogPag.getUrl(driver);
+		//driver.get("https://example.testproject.io/web/");
 	}
 
 	@When("User enters (.*) and (.*)$")
