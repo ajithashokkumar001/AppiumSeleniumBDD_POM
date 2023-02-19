@@ -26,8 +26,8 @@ public class AppiumStepsPOM {
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		cap.setCapability("deviceName", "Ajith's M33");
-		//cap.setCapability("udid", "RFCT60GYCNF");
-		cap.setCapability("udid", "192.168.1.17:5555");
+		cap.setCapability("udid", "RFCT60GYCNF");
+		//cap.setCapability("udid", "192.168.1.17:5555");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platfromVersion", "13");
 
@@ -64,8 +64,8 @@ public class AppiumStepsPOM {
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		cap.setCapability("deviceName", "Ajith's M33");
-		//cap.setCapability("udid", "RFCT60GYCNF");
-		cap.setCapability("udid", "192.168.1.17:5555");
+		cap.setCapability("udid", "RFCT60GYCNF");
+		//cap.setCapability("udid", "192.168.1.17:5555");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platfromVersion", "13");
 
