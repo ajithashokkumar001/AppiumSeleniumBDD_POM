@@ -90,6 +90,15 @@ public class AppiumStepsPOM {
 
 	}
 
+	@When("I do some operation again User enters (.*) and (.*)$")
+	public void i_do_some_operation_again_User_enters(String Num1, String Num2) {
+		 
+		AppiumCalcPage calcPage = new AppiumCalcPage(driver);
+
+		 calcPage.InsertText(Num1, Num2);
+
+	}
+	
 	@Then("I validate the results again")
 	public void i_validate_the_results_again() {
 		 

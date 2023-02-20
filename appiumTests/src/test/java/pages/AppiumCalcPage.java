@@ -19,6 +19,8 @@ public class AppiumCalcPage {
 	By keypad_add = By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_add");
 	By keypad_equal = By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_equal");
 	By validate = By.id("com.sec.android.app.popupcalculator:id/calc_edt_formula");
+	
+	By calc_textScreen = By.id("com.sec.android.app.popupcalculator:id/calc_edt_formula");
 
 	public AppiumCalcPage(AppiumDriver driver) {
 
@@ -74,6 +76,14 @@ public class AppiumCalcPage {
 	public void AssertValidate2() {
 
 		WebElement result= (WebElement) driver.findElement(validate);
-		Assert.assertEquals(result.getText(), "5");
+		Assert.assertEquals(result.getText(), "11");
 	}
+	
+	public void InsertText(String Num1, String Num2) {
+		
+		WebElement insert = (WebElement) driver.findElement(calc_textScreen);
+		insert.sendKeys(Num1);
+		insert.sendKeys(Num2);
+	}
+	
 }

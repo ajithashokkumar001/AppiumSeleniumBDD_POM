@@ -8,7 +8,8 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/Features/", glue= {"stepDefinitions"},
 
-plugin= {"pretty", "html:target/HtmlReports"})
+plugin= {"pretty", "html:target/HtmlReports"},
+tags= "@MobileMultipleTests")
 			
 
 //"io.qameta.allure.cucumberjvm.AllureCucumberJvm"})

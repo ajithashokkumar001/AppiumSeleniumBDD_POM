@@ -1,5 +1,6 @@
 Feature: Feature to test google search functionality
 
+@WebTest
   Scenario: Validate google search functionality
     Given Browser is open
     And User is on google search page
