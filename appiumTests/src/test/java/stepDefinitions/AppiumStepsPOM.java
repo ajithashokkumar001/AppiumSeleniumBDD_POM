@@ -5,10 +5,14 @@ import java.net.URL;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.OutputType;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,6 +22,17 @@ import pages.AppiumCalcPage;
 public class AppiumStepsPOM {
 
 	static AppiumDriver driver;
+	
+//	public void takeScraenshotOnFailure(Scenario scenario) {
+//
+//		if (scenario.isFailed()) {
+//
+//		TakesScreenshot ts = (TakesScreenshot) driver;
+//
+//		byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+//		scenario.attach(src, "image/png", "screenshot");
+//		}
+//	}
 	
 	@Given("I Open the calculator application")
 	public void i_open_the_calculator_application() throws MalformedURLException {

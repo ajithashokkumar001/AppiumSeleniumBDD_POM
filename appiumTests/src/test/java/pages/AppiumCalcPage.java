@@ -71,12 +71,15 @@ public class AppiumCalcPage {
 
 		WebElement result= (WebElement) driver.findElement(validate);
 		Assert.assertEquals(result.getText(), "9");
+		
 	}
 
 	public void AssertValidate2() {
 
 		WebElement result= (WebElement) driver.findElement(validate);
 		Assert.assertEquals(result.getText(), "11");
+		
+		 
 	}
 	
 	public void InsertText(String Num1, String Num2) {
