@@ -32,10 +32,13 @@ public class LoginSteps {
 	}
 
 	@When("User enters (.*) and (.*)$")
-	public void user_enters_username_and_password(String Username, String Password) {
+	public void user_enters_username_and_password(String Username, String Password) throws InterruptedException {
 		System.out.println("Reached When");
+		Thread.sleep(5000);
 		driver.findElement(By.id("name")).sendKeys(Username);
+		Thread.sleep(5000);
 		driver.findElement(By.id("password")).sendKeys(Password);
+		Thread.sleep(5000);
 	}
 
 	@When("Clicks on login button")

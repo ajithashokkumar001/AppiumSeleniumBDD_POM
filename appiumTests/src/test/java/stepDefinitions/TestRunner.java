@@ -13,7 +13,7 @@ import io.cucumber.junit.Cucumber;
 //tags= "@MobileMultipleTests")
 
 plugin= {"pretty", "html:target/HtmlReports"},
-tags= "@MobileMultipleTests")
+tags= "@MobileMultipleTestsGene")
 			
 
 //"io.qameta.allure.cucumberjvm.AllureCucumberJvm"})

@@ -26,26 +26,6 @@ public class AppiumCalcPage {
 
 		this.driver = driver;
 	}
-
-//	public void desiredCapabilities(AppiumDriver driver) throws MalformedURLException {
-//		
-//
-//		DesiredCapabilities cap = new DesiredCapabilities();
-//
-//		cap.setCapability("deviceName", "Ajith's M33");
-//		//cap.setCapability("udid", "RFCT60GYCNF");
-//		cap.setCapability("udid", "192.168.1.17:5555");
-//		cap.setCapability("platformName", "Android");
-//		cap.setCapability("platfromVersion", "13");
-//
-//		cap.setCapability("appPackage", "com.sec.android.app.popupcalculator");
-//		cap.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator");
-//
-//		URL url = new URL("http://0.0.0.0:4723/wd/hub");
-//		driver = new AppiumDriver(url, cap);
-//
-//		System.out.println("Appium started... ");
-//	}
 	
 	public void tap3() {
 
